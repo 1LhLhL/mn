@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>哔哩哔哩弹幕视频网 - ( ゜- ゜)つロ  乾杯~  - bilibili</title>
+	<style>
+	body{
+	min-width: 980px;
+	font-family: "Microsoft YaHei",Arial,Helvetica,sans-serifsans-serif;
+	}
+	.w{
+	width: 980px;
+	margin: 0 auto;
+	}
+	.header{
+	width: 100%;
+	height: 170px;
+	background: url(img/d018a3742c508cc379472735bf7d124cc7ae9f13.jpg) no-repeat center -10px;
+
+	}
+	.header .banner{
+	height: 42px;
+	height: 42px;
+	background-color: rgba(0,0,0,0.4);
+	color: #222;
+	}
+	.header .content{
+	height: 42px;
+	position: relative;
+
+	}
+	.header .content .fl {
+	float: left;
+	height: 42px;
+	font-size: 13px;
+	}
+	a{
+	text-decoration: none;
+	}
+	li{
+	list-style: none;
+	}
+	.header .content .fl li{
+	height: 42px;
+	transition: .15s all;
+	float: left;
+	text-align: center;
+	line-height: 42px;
+	}
+	.header .content .fl li a{
+	color: #fff;
+	padding: 0 14px;
+
+	}
+	.header .content .fl li:hover{
+	background-color: rgba(255,255,255,0.24);
+	}
+	.header .content li.home{
+	background-position: -845px -74px;
+	background-image: url(img/icons.png);
+	background-repeat: no-repeat;
+	margin-left: -12px;
+	padding: 0 0 0 20px;
+	}
+	.header .content .fl li:last-child a{
+	position: relative;
+
+	}
+	.header .content .fl .new{
+
+	position: absolute;
+	right: -8px;
+	color: #f25d8e;
+	top: 0px;
+	background: url(img/icons.png) no-repeat -851px -412px;
+	width: 22px;
+	height: 10px;
+	}
+	.header .content .fr{
+	float: right;
+	}
+	.header .content .fr li{
+	float: left;
+	transition: .15s all;
+	font-size: 12px;
+	text-align: center;
+	line-height: 42px;
+	}
+	.header .content .fr li:hover{
+	background-color: rgba(255,255,255,0.24);
+	}
+	.header .content .fr li a{
+	color: #fff;
+	}
+	.header .content .fr li.c{
+	padding: 0 10px;
+	}
+	.header .content .fr li.three{
+	width: 1px;
+	height: 12px;
+	background-color: #fff;
+	margin-top:16px;
+	}
+	.header .content .fr li.tg{
+	width: 58px;
+	background: url(img/b-post.png) center center no-repeat;
+	height: 48px;
+	border-radius: 0 0 5px 5px;
+	color: #fff!important;
+	position: relative;
+	}
+	.header .content .fr li.tg li:hover{
+	background-color: #e5e9ef;
+	}
+	.header .content .fr li.tg ul{
+	position: absolute;
+	opacity: 0;
+	top: 42px;
+	right: 0;
+	width: 216px;
+	border: 0;
+	transition: .2s all;
+	border-radius: 0 0 4px 4px;
+	background-color: #fff;
+	box-shadow: rgba(0,0,0,0.16) 0 2px 4px;
+	overflow: hidden;
+	}
+	.header .content .fr li.tg:hover ul{
+	opacity: 1;
+	}
+	.header .content .fr li.tg li{
+	text-align: center;
+	width: 72px;
+	height: 64px;
+	transition: .1s;
+	float: left;
+	font-style: normal;
+	font-weight: normal;
+	}
+	.header .content .fr li.tg li i{
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url(img/icons.png) no-repeat ;
+	margin:10px auto -2px;
+	}
+	.header .content .fr li.tg li:first-child i{
+	background-position: -471px -919px;
+	}
+	.header .content .fr li.tg li:nth-child(2) i{
+	background-position: -471px -982px;
+	}
+	.header .content .fr li.tg li:last-child i{
+	background-position: -471px -1753px;
+	}
+	.header .content .fr li.tg li a{
+	color: #f25d8e;
+
+	}
+	.content .bili{
+	position: absolute;
+	width: 220px;
+	height: 105px;
+	left: 24px;
+	top: 55px;
+	background: transparent no-repeat left center;
+	background-image: url(img/ab1c51161404343df6feaed0a18352f7474c2430.png);
+	}
+	.content .search{
+	position: absolute;
+	top: 112px;
+	right: 0;
+	width: 350px;
+	height: 35px;
+	}
+
+	.content .search a {
+	display: inline-block;
+	width: 68px;
+	height: 35px;
+	border-radius: 5px;
+	background-color: rgba(255,255,255,0.88);
+	}
+	.content .search span{
+	padding-left: 26px;
+	color: #f25d8e;
+	line-height: 35px;
+	display: inline-block;
+	background: url(img/icons.png) -659px -655px no-repeat;
+	}
+	.content .search div{
+	transition: .15s all;
+	height: 35px;
+
+	}
+	.content .search a:hover,.content .search .fr:hover{
+	background-color: #fff;
+	}
+	.content .search .fl{
+	float: left;
+	}
+	.content .search .fr{
+	float: right;
+	}
+	.content .search input{
+	width: 255px;
+	color: #222;
+
+	border-radius: 5px;
+	background-color: rgba(255,255,255,0.88);
+	font-size: 12px;
+	outline: 0;
+	border: 0;
+	height: 35px;
+	line-height: 35px;
+	padding: 0 12px;
+	}
+	.content .search button{
+	background-position: -718px -720px;
+	display: block;
+	width: 48px;
+	position: absolute;
+	right: 0;
+	top: 2px;
+	border: 0;
+	height: 35px;
+	outline: 0;
+	background: url(img/icons.png) -653px -720px;
+	}
+	.content .search button:hover{
+	background-position: -718px -720px;
+	}
+	.bannerr{
+	padding: 6px 0;
+	position: relative;
+	height: 51px;
+	}
+
+	.bannerr li.e{
+	list-style: none;
+	float: left;
+	font-size: 14px;
+
+	padding: 0 11px;
+	padding-top: 23px;
+	height:27px;
+
+	position: relative;
+	}
+	.bannerr li.one:first-child{
+	background: url(img/icons.png) -658px -1170px no-repeat;
+	padding-right: 12px;
+	padding-left: 0;
+	}
+	.bannerr ul li ul {
+	background-color: #fff;
+	display: none;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	z-index: 3;
+	}
+	.bannerr ul li:hover ul{
+	display: block;
+	}
+	.bannerr ul li ul li {
+	position: relative;
+	font-size: 12px;
+	line-height: 20px;
+	width: 150px;
+	text-align: left;
+	transition: .2s all;
+	}
+	.bannerr ul li ul li a{
+	padding: 7px 15px 5px 25px;
+	margin-right: 10px;
+	background: url(img/icons2.png) no-repeat 12px -1613px;
+
+
+	transition: .2s all;
+	overflow: hidden;
+	position: relative;
+	left: 0;
+	color: #222;
+	}
+	.bannerr ul li ul li:hover{
+	background-color: #e5e9ef;
+	}
+	.bannerr ul li ul li a:hover{
+	left:4px;
+	}
+	.bannerr ul li ul li:hover span{
+	right:-5px;
+	opacity: 1;
+	}
+	.bannerr ul li ul li span{
+	background: url(img/icons2.png) no-repeat 0 -1581px;
+	width: 15px;
+	height: 18px;
+	display: block;
+	opacity: 0;
+	position: absolute;
+	right: -100px;
+	top: 5px;
+	transition: .2s all;
+
+	}
+	.bannerr ul li a{
+	color: #222;
+	}
+	.bannerr>li:last-child{
+	margin-right: 20px;
+	}
+	.bannerr .c{
+	position: absolute;
+	top: 8px;
+	left: 11px;
+	height: 14px;
+	width: 24px;
+	background-color: #ffafc9;
+	text-align: center;
+	padding: 1px 3px;
+	font-size: 11px;
+	border-radius:4px;
+	color: #fff;
+	font-family: Calibri,Arial,Helvetica,sans-serifsans-serif;
+	}
+	.bannerr div{
+	margin-right: 16px;
+	float: left;
+	}
+	.bannerr div.one a{
+
+	padding-left: 12px;
+	display: inline-block;
+	height: 49px;
+	line-height: 49px;
+	font-size: 12px;
+	background: url("img/icons.png") no-repeat;
+	}
+
+	.bannerr div.two a{
+	padding-left: 22px;
+	display: inline-block;
+	height: 49px;
+	line-height: 49px;
+	font-size: 16px;
+	margin-left: 10px;
+	background: url(img/icons.png) -664px -904px no-repeat;
+	}
+	.bannerr .menu-r{
+	margin-right: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 50px;
+	padding: 6px 0;
+	}
+
+	.bannerr .menu-r a.two{
+	width: 58px;
+	height: 44px;
+	background: url(img/app-link.png) center center no-repeat;
+	display: inline-block;
+	margin: 3px 0px;
+
+	}
+	</style>
+	<link rel="stylesheet" href="danmu.css"/>
+	</head>
+<body>
+<div class="header">
+	<div class="banner">
+		<div class="content w">
+
+			<div class="fl">
+				<ul>
+					<li class="home"><a href="#"><span>主站</span></a></li>
+					<li><a href="#">画友</a></li>
+					<li><a href="#">游戏中心</a></li>
+					<li><a href="#">直播</a></li>
+					<li><a href="#">周边</a></li>
+					<li><a href="#"><span>拜年祭</span><em class="new"></em></a>
+					</li>
+				</ul>
+			</div>
+			<div class="fr">
+				<ul>
+					<li class="c"><a href="login.html">登录</a></li>
+					<li class="three"></li>
+					<li class="zc c"><a href="zhuce.html">注册</a></li>
+
+					<li class="tg"><a href="#">投稿</a>
+						<ul>
+							<li><a href="#">
+								<i></i>
+								<span>视频投稿</span>
+							</a></li>
+							<li><a href="#">
+
+								<i></i>
+								<span>投稿管理</span>
+							</a></li>
+							<li><a href="#">
+								<i></i>
+								<span>	创作中心</span>
+							</a></li>
+						</ul>
+
+					</li>
+				</ul>
+			</div>
+			<div class="bili "></div>
+			<div class="search">
+				<div class="fl">
+					<a href="#">
+						dsfaaaaaaaa
+						<span>排行榜</span>
+					</a>
+				</div>
+				<div class="fr">
+					<form action="">
+						<input type="text" name="" placeholder="自从这群歪果仁着魔于中国春节以后"><button></button>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+<div class="bannerr w">
+
+	<ul class="ull">
+		<li class="one e " ><a href="#"><span>首页</span></a></li>
+		<li class="e"><a href="#"><span>动画</span>
+			<div class="c">
+				775
+			</div>
+
+		</a>
+
+			<ul>
+				<li><a href="#">MAD·AMV<span></span></a></li>
+				<li><a href="#">MMD·3D <span></span></a></li>
+				<li><a href="#">短片·手书·配音 <span></span></a></li>
+				<li><a href="#">综合 <span></span></a></li>
+			</ul>
+
+		</li>
+		<li class="e"><a href="#"><span>番剧</span><div class="c">
+			85
+		</div></a>
+
+			<ul class="i_num">
+				<li><a href="#">连载动画 <span></span></a></li>
+				<li><a href="#">完结动画 <span></span></a></li>
+				<li><a href="#">国产动画 <span></span></a></li>
+				<li><a href="#">资讯 <span></span></a></li>
+				<li><a href="#">官方延伸 <span></span></a></li>
+				<li><a href="#">新番时间表 <span></span></a></li>
+				<li><a href="#">番剧索引 <span></span></a></li>
+			</ul>
+		</li>
+		<li class="e"><a href="#"><span>音乐</span><div class="c">
+			999+
+		</div></a><ul class="i_num">
+			<li><a href="#">原创音乐 <span></span></a></li>
+			<li><a href="#">翻唱 <span></span></a></li>
+			<li><a href="#">VOCALOID <span></span></a></li>
+			<li><a href="#">演奏 <span></span></a></li>
+			<li><a href="#">三次元音乐 <span></span></a></li>
+			<li><a href="#">OP/ED/OST <span></span></a></li>
+			<li><a href="#">音乐选集 <span></span></a></li>
+		</ul>
+
+
+		</li>
+		<li class="e"><a href="#"><span>舞蹈</span><div class="c">
+			165
+		</div></a><ul class="i_num">
+			<li><a href="#">宅舞 <span></span></a></li>
+			<li><a href="#">三次元舞蹈 <span></span></a></li>
+			<li><a href="#">舞蹈教程 <span></span></a></li>
+
+		</ul></li>
+		<li class="e"><a href="#"><span>游戏</span><div class="c">
+			999+
+		</div></a><ul class="i_num">
+			<li><a href="#">单机联机 <span></span></a></li>
+			<li><a href="#">网络电竞 <span></span></a></li>
+			<li><a href="#">音游 <span></span></a></li>
+			<li><a href="#">Mugen <span></span></a></li>
+			<li><a href="#">GMV <span></span></a></li>
+
+		</ul></li>
+		<li class="e"><a href="#"><span>科技</span><div class="c">
+			459
+		</div></a><ul class="i_num">
+			<li><a href="#">记录片 <span></span></a></li>
+			<li><a href="#">趣味科普人文 <span></span></a></li>
+			<li><a href="#">野生技术协会 <span></span></a></li>
+			<li><a href="#">星海<span></span></a></li>
+			<li><a href="#">数码 <span></span></a></li>
+			<li><a href="#">机械 <span></span></a></li>
+
+		</ul></li>
+		<li class="e"><a href="#"><span>生活</span><div class="c">
+			999+
+		</div></a><ul class="i_num">
+			<li><a href="#">生活 <span></span></a></li>
+			<li><a href="#">日常 <span></span></a></li>
+			<li><a href="#">美食圈 <span></span></a></li>
+			<li><a href="#">动物圈 <span></span></a></li>
+			<li><a href="#">手工 <span></span></a></li>
+			<li><a href="#">绘画 <span></span></a></li>
+			<li><a href="#">运动 <span></span></a></li>
+		</ul></li>
+		<li class="e"><a href="#"><span>鬼畜</span><div class="c">
+			178
+		</div></a><ul class="i_num">
+			<li><a href="#">鬼畜调教 <span></span></a></li>
+			<li><a href="#">音MAD <span></span></a></li>
+			<li><a href="#">人力VA <span></span></a></li>
+			<li><a href="#">教程演示 <span></span></a></li>
+
+		</ul></li>
+		<li class="e"><a href="#"><span>时尚</span><div class="c">
+			169
+		</div></a><ul class="i_num">
+			<li><a href="#">美妆 <span></span></a></li>
+			<li><a href="#">服饰 <span></span></a></li>
+			<li><a href="#">健身 <span></span></a></li>
+			<li><a href="#">资讯 <span></span></a></li>
+
+		</ul></li>
+		<li class="e"><a href="#"><span>广告</span><div class="c">
+			30
+		</div></a><ul class="i_num">
+			<li><a href="#">连载动画 <span></span></a></li>
+			<li><a href="#">连载动画 <span></span></a></li>
+			<li><a href="#">连载动画 <span></span></a></li>
+			<li><a href="#">连载动画 <span></span></a></li>
+			<li><a href="#">连载动画 <span></span></a></li>
+			<li><a href="#">连载动画 <span></span></a></li>
+			<li><a href="#">连载动画 <span></span></a></li>
+		</ul></li>
+		<li class="e"><a href="#"><span>娱乐</span><div class="c">
+			999+
+		</div></a><ul class="i_num">
+			<li><a href="#">综艺 <span></span></a></li>
+			<li><a href="#">明星 <span></span></a></li>
+			<li><a href="#">Korea相关 <span></span></a></li>
+			<li><a href="#">连载动画 <span></span></a></li>
+			<li><a href="#">连载动画 <span></span></a></li>
+			<li><a href="#">连载动画 <span></span></a></li>
+			<li><a href="#">连载动画 <span></span></a></li>
+		</ul>
+		</li>
+		<li class="e"><a href="#"><span>影视</span><div class="c">
+			793
+		</div></a><ul class="i_num">
+			<li><a href="#">电影 <span></span></a></li>
+			<li><a href="#">电视剧 <span></span></a></li>
+
+		</ul>
+		</li>
+	</ul>
+
+
+
+
+	<div class="one"><a href="#" title="" class="a"><span>广场</span></a></div>
+	<div class="two"><a href="#" title="" class="a"><span>直播</span></a></div>
+	<div class="menu-r">
+		<a href="" title="" class="a">
+			<div class="random_movie">
+				<img src="img/oYYBAFfnWKqAJFCeAAAMVntr7iw049.gif" alt="调教">
+			</div>
+		</a>
+		<a href="#" class="two">
+
+		</a>
+
+	</div>
+
+
+</div>
+<div class="view w">
+	<div class="ceshi">
+		<div class="fl">
+			<div class="one"><h1 title="高级语言弹幕测试">高级语言弹幕测试</h1></div>
+			<div class="two">
+				<span >主页</span>
+				&gt; <span>动画</span>
+				&gt; <span class="on" >综合</a></span>
+				<span class="time">2011-07-26 01:55</span>
+				<span class="ts">稿件投诉</span>
+
+
+
+			</div>
+			<div class="three">
+				<div class="f1">
+					<i></i>
+					<span>176.1万</span></div>
+				<div class="f2"><i></i><span>7.6万</span></div>
+				<div class="ff3"><i></i><span>最高全站日排行65名</span></div>
+				<div class="f4"><i></i><span>fsdsafd</span></div>
+				<div class="f5"><i></i><span>fsdsafd</span></div>
+			</div>
+		</div>
+		<div class="fr">
+
+			<div class="l">
+				<img src="img/8b72192cc8ffda49f6fd1c25d3266a9f5616fc78.jpg@68w_68h.webp" alt=""/>
+				<img src="img/02a3b79edef0f0e682de7f5dca7b6b5fe36d5f65.png@112w_112h%20(1).webp" class="big"/></div>
+			<div class="r">
+				<div class="one">
+					<a href="#" class="bishi">碧诗</a>
+					<a href="#" class="sixin">私信</a>
+				</div>
+				<div class="two">bilibili~干杯~</div>
+				<div class="three">
+					<div class="fll">投稿：28</div>
+					<div class="frr"> 粉丝：129395</div>
+				</div>
+				<div class="four">+  关注</div>
+			</div>
+		</div>
+	</div>
+	<div class="apic">
+		<a href="#" class="pic1"><img src="img/f70d2c7eee5d4e923bc48ab14dedd649454ed49d.jpg@.webp" alt=""/></a>
+		<a href="#" class="pic2"><img src="img/e4340673c9f2e48544a71083300f72623c64e021.jpg@.webp"  alt=""/></a>
+	</div>
+
+</div>
+
+
+<div class="dmcs">
+	<div class="content w">
+		<div class="list">
+			<a href="#" class="first">1、TIT互动弹幕演示</a>
+			<a href="#">2、基础代码演示</a>
+			<a href="#">3、IDOLMASTER</a>
+			<a href="#">4、魔法小圆OP</a>
+			<a href="#">5、キミとふたり</a>
+			<a href="#">6、いとうかなこ </a>
+		</div>
+	</div>
+
+
+</div>
+</body>
+</html>

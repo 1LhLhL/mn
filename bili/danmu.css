@@ -1,0 +1,187 @@
+.view .one h1{
+	    height: 24px;
+    line-height: 24px;
+    text-overflow: ellipsis;
+      color: #525659;
+    padding: 8px 0;
+    font-size: 18px;
+}
+
+.view .two a{
+	display: inline-block;
+	color: #99a2aa;
+}
+.view .two span.time{
+        margin-left: 32px;
+}
+.view .two span.ts{
+
+    margin-left: 44px;
+
+}
+.view .two span{
+    color: #99a2aa;
+    cursor: pointer;
+}
+
+.view .two{
+    margin: 6px 0 12px 0;
+}
+.view .three div{
+    float: left;
+    width: 98px;
+
+}
+.view .three{
+    overflow: hidden;
+}
+.view .fl{
+    float: left;
+}
+.view  .fr{
+    width: 225px;
+    margin-top: 20px;
+    float: right;
+    background: #fff;
+    padding-left: 90px;
+    position: relative;
+}
+.view .three i{
+    background: transparent url(img/icons.png) no-repeat top left;
+    display: inline-block;
+    width: 28px;
+    float: left;
+    height: 28px;
+
+}
+.view .three  i{
+                    background-position: -659px -210px;
+                }
+.view .three span{
+    font-size: 12px;
+    padding: 0 5px;
+    line-height: 28px;
+}
+.view .three div.ff3{
+    width: 150px;
+    padding-right: 26px;
+}
+.view  .fr .l{
+    position: absolute;
+    top: -6px;
+    left: -11px;
+    width: 108px;
+    height: 122px;
+    float: left;
+}
+.view  .fr .l img.big{
+    width: 112px;
+    height: 112px;
+    position: absolute;
+    top: -19px;
+    left: -23px;
+}
+.view  .fr .r{
+    float: left;
+
+}
+.view  .fr .r a{
+    color: #fb7299;
+    display: inline-block;
+    font-size: 14px;
+}
+.view  .fr .r a.bishi{
+   margin-right: 138px;
+}
+.view  .fr .r a.sixin{
+
+    float: right;
+    color: #6d757a;
+    background: url(img/icons.png) no-repeat -272px -2006px;
+    padding-left: 30px;
+}
+.view  .fr div.two{
+    color: #333;
+    line-height: 20px;
+    min-height: 11px;
+}
+.view  .fr div.three{
+    line-height: 18px;
+    margin-bottom: 10px;
+    margin-top: 3px;
+}
+.view  .fr div.three div{
+    float: left;
+    font-size: 12px;
+    color: #99a2aa;
+    display: inline-block;
+    width: 100px;
+}
+.view  .fr div.four{
+    height: 22px;
+    font-size: 14px;
+    line-height: 22px;
+    display: inline-block;
+    background-color: #00a1d6;
+    border: 1px solid #00a1d6;
+    transition: .2s background-color;
+    width: 138px;
+
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+}
+.view .apic{
+   margin: 10px 0 20px 0;
+    overflow: hidden;
+}
+.view .pic{
+    display: inline-block;
+}
+.view .ceshi{
+    height: 107px;
+    overflow: hidden;
+}
+.view .apic .pic1{
+    float: left;
+}
+.view .apic .pic2{
+    float: right;
+}
+ .dmcs{
+    border-top: 1px solid #e5e9ef;
+    border-bottom: 1px solid #e5e9ef;
+    background-color: #f6f9fa;
+    padding: 20px 0;
+
+    height: 745px;
+}
+.dmcs .list{
+    padding-right: 55px;
+    height: 37px;
+    margin-bottom: 8px;
+}
+.dmcs .list a{
+    display: block;
+    color: #222;
+    border-radius: 4px;
+    border: 1px solid #ccd0d7;
+font-size: 12px;
+    float: left;
+    padding: 3px 7px 3px 7px;
+    margin: 0 20px 12px 0;
+    background: #fff;
+    height: 17px;
+    line-height: 17px;
+   width: 117px;
+
+    transition: .15s;
+    transition-property: background-color,border-color,color;
+}
+.dmcs .list a.first{
+    background: #00a1d6;
+}
+.dmcs .list a:hover{
+    background: #00a1d6;
+}
